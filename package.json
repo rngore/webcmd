@@ -1,0 +1,1 @@
+{"name":"nexus-browser-agent","version":"1.0.0","private":true,"type":"module","scripts":{"start":"node src/server.js","test":"node --test","format":"node --check src/*.js tests/*.test.js","typecheck":"node --check src/*.js"}}

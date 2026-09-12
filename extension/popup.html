@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Nexus Browser Agent</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <header>
+      <div class="mark">✦</div>
+      <div>
+        <p class="eyebrow">NEXUS / BY RNGORE</p>
+        <h1>Research from your browser.</h1>
+      </div>
+      <span class="status"><i></i> Local</span>
+    </header>
+    <p class="intro">Give Nexus a research objective. It’ll analyze the current page and gather relevant evidence for you.</p>
+    <form id="form">
+      <div class="composer">
+        <textarea id="objective" required placeholder="What would you like to discover?"></textarea>
+        <button>Start research <span>→</span></button>
+      </div>
+      <p id="page-context" class="context"></p>
+    </form>
+    <section id="workspace" class="hidden">
+      <div class="workspace-head">
+        <div><p class="eyebrow">EXECUTION</p><h2 id="status">Preparing…</h2></div>
+        <span id="task-id"></span>
+      </div>
+      <div class="grid">
+        <article>
+          <div id="events" class="events"></div>
+          <div id="confirmation" class="confirmation hidden">
+            <h3>Action requires confirmation</h3>
+            <p id="confirmation-details"></p>
+            <div class="confirmation-actions">
+              <button id="confirm-action" type="button">Confirm and continue</button>
+              <button id="cancel-action" type="button">Cancel</button>
+            </div>
+          </div>
+          <div id="result" class="result"></div>
+        </article>
+      </div>
+    </section>
+    <script src="popup.js"></script>
+  </body>
+</html>

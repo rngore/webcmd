@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Nexus Browser Agent",
+  "version": "1.0.0",
+  "description": "Research with a real browser through WebCMD.",
+  "icons": {
+    "16": "icons/nexus-mark-16.png",
+    "32": "icons/nexus-mark-32.png",
+    "48": "icons/nexus-mark-48.png",
+    "128": "icons/nexus-mark-128.png"
+  },
+  "action": {
+    "default_title": "Open Nexus Browser Agent",
+    "default_icon": {
+      "16": "icons/nexus-mark-16.png",
+      "32": "icons/nexus-mark-32.png",
+      "48": "icons/nexus-mark-48.png",
+      "128": "icons/nexus-mark-128.png"
+    }
+  },
+  "permissions": ["activeTab", "scripting", "tabs", "sidePanel"],
+  "background": { "service_worker": "background.js" },
+  "side_panel": { "default_path": "popup.html" },
+  "host_permissions": ["http://localhost:4173/*"]
+}
