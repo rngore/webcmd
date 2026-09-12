@@ -41,41 +41,6 @@ The extension’s normal research path uses `chrome.scripting.executeScript` to 
 
 WebCMD is an independent upstream project. Nexus does not claim ownership of its source code or trademarks. See the upstream project for official installation instructions, releases, documentation, and license information.
 
-## Architecture
-
-```text
-Browser side panel
-        |
-Manifest V3 background worker
-        |
-        +--> active-tab evidence capture
-        |
-Local Node companion :4173
-        |
-        +--> question and page classification
-        +--> planner and structured task state
-        +--> structured evidence extraction
-        +--> security filtering
-        +--> response-depth answer generation
-        +--> WebCMD action adapter
-        +--> action policy and confirmation gates
-        +--> verification and recovery
-```
-
-Research tasks follow:
-
-```text
-Understand → classify → extract → rank → validate → answer
-```
-
-Action tasks follow:
-
-```text
-Understand → classify → plan → policy check → execute
-→ observe → verify → recover / ask / continue → report
-```
-
-The live browser is authoritative. WebCMD memory is treated as prior knowledge and never overrides current page evidence.
 
 ## Requirements
 
