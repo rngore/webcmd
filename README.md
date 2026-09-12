@@ -92,10 +92,6 @@ Explain what this documentation provides in detail.
 ```
 
 ```text
-Find three laptops under ₹80,000 and compare their specifications.
-```
-
-```text
 Prepare a reservation for four people, but ask before booking.
 ```
 
@@ -132,17 +128,7 @@ tests/
   agent.test.js        Unit and regression tests
 ```
 
-## Development
-
-```bash
-npm run format
-npm run typecheck
-npm test
-```
-
-The test suite covers research extraction, structured event retrieval, documentation answers, response depth, source links, security filtering, action policy, verification, and confirmation gates.
-
-## documentation
+## Documentation
 
 - [Project documentation](documentation.md)
 - [Architecture reference](architecture.md)
