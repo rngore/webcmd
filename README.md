@@ -30,13 +30,10 @@ The integration is intentionally isolated in `src/webcmd.js`:
 ```text
 Nexus planner and agent loop
             |
-            v
      WebCMD adapter
             |
-            v
  WebCMD profile/session
             |
-            v
     Live browser page
 ```
 
@@ -44,17 +41,15 @@ The extension’s normal research path uses `chrome.scripting.executeScript` to 
 
 WebCMD is an independent upstream project. Nexus does not claim ownership of its source code or trademarks. See the upstream project for official installation instructions, releases, documentation, and license information.
 
-## architecture
+## Architecture
 
 ```text
 Browser side panel
         |
-        v
 Manifest V3 background worker
         |
         +--> active-tab evidence capture
         |
-        v
 Local Node companion :4173
         |
         +--> question and page classification
