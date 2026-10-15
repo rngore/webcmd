@@ -67,7 +67,6 @@ curl http://localhost:4173/api/health
 ```
 
 Load the extension:
-
 1. Open `chrome://extensions` or `edge://extensions`.
 2. Enable **Developer mode**.
 3. Select **Load unpacked**.
